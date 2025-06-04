@@ -80,15 +80,15 @@ ul.menu li:hover{
     display: flex;
     align-items: flex-start;      /* Alinha pelo topo */
     justify-content: center;      /* Centraliza horizontalmente */
-    gap: 260px; /* Aumente o valor para mais espaço */
+    gap: 250px; /* Aumente o valor para mais espaço */
     margin-top: 160px;
 }
 #Pp {
     display: block;
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     height: auto;
-    margin: 0;
+    margin: -40px 0 0 0; /* sobe a imagem 40px, ajuste como quiser */
 }
 
 a#compre{
@@ -392,7 +392,681 @@ footer ul {
     box-shadow: #87aaca 0px 0px 10px 0px;
     transition: 0.3s ease;
 }
-    display: flex;    max-width: 240px;        /* Largura máxima um pouco menor */ax
-    .abrir-menu { 
-        display: block; 
+/* ========================================
+   MEDIA QUERIES - RESPONSIVIDADE COMPLETA
+   ======================================== */
+
+/* DESKTOP GRANDE - acima de 1440px */
+@media screen and (min-width: 1441px) {
+    /* Header */
+    #logoHeader {
+        width: 160px;
+        height: 160px;
+        margin-left: 80px;
     }
+    
+    .menu {
+        left: 350px;
+        gap: 15px;
+    }
+    
+    .menu a {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+    }
+    
+    /* Produto principal */
+    .produto-principal {
+        gap: 120px;
+        margin-top: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #Pp {
+        max-width: 500px;
+    }
+    
+    .descricao {
+        width: 450px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .descricao h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .descricao p {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.6;
+    }
+    
+    a#compre {
+        margin: 30px auto 0 auto;
+        display: block;
+        text-align: center;
+        width: 250px;
+    }
+    
+    /* Subprodutos */
+    .subprodutos {
+        gap: 80px;
+        margin-top: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item-produto {
+        max-width: 280px;
+        text-align: center;
+    }
+    
+    .item-produto img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .item-produto h3,
+    .item-produto p {
+        text-align: center;
+    }
+    
+    /* Contato */
+    .contato-container {
+        gap: 100px;
+        margin-top: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form {
+        max-width: 450px;
+        text-align: center;
+    }
+    
+    form input,
+    form textarea,
+    form select {
+        width: 400px;
+    }
+    
+    form button,
+    form input[type="submit"] {
+        width: 300px;
+        margin: 20px auto 0 auto;
+        display: block;
+    }
+    
+    .qr-article {
+        text-align: center;
+    }
+    
+    .qr-img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* DESKTOP MÉDIO - 1025px a 1440px */
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+    /* Header */
+    #logoHeader {
+        width: 140px;
+        height: 140px;
+        margin-left: 60px;
+    }
+    
+    .menu {
+        left: 280px;
+        gap: 12px;
+    }
+    
+    .menu a {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    /* Produto principal */
+    .produto-principal {
+        gap: 100px;
+        margin-top: 130px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #Pp {
+        max-width: 400px;
+    }
+    
+    .descricao {
+        width: 380px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .descricao h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .descricao p {
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    a#compre {
+        margin: 25px auto 0 auto;
+        display: block;
+        text-align: center;
+        width: 220px;
+    }
+    
+    /* Subprodutos */
+    .subprodutos {
+        gap: 60px;
+        margin-top: 220px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item-produto {
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    .item-produto img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .item-produto h3,
+    .item-produto p {
+        text-align: center;
+    }
+    
+    /* Contato */
+    .contato-container {
+        gap: 80px;
+        margin-top: 180px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form {
+        max-width: 400px;
+        text-align: center;
+    }
+    
+    form input,
+    form textarea,
+    form select {
+        width: 350px;
+    }
+    
+    form button,
+    form input[type="submit"] {
+        width: 280px;
+        margin: 15px auto 0 auto;
+        display: block;
+    }
+    
+    .qr-article {
+        text-align: center;
+    }
+    
+    .qr-img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* TABLETS - 768px a 1024px */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    /* Header */
+    #logoHeader {
+        width: 120px;
+        height: 120px;
+        margin-left: 50px;
+    }
+    
+    .menu {
+        left: 250px;
+        gap: 8px;
+    }
+    
+    .menu a {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Produto principal */
+    .produto-principal {
+        gap: 80px;
+        margin-top: 120px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #Pp {
+        max-width: 350px;
+    }
+    
+    .descricao {
+        width: 320px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .descricao h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    
+    .descricao p {
+        width: 320px;
+        text-align: center;
+        line-height: 1.4;
+    }
+    
+    a#compre {
+        margin: 20px auto 0 auto;
+        display: block;
+        text-align: center;
+        width: 200px;
+    }
+    
+    /* Subprodutos */
+    .subprodutos {
+        gap: 50px;
+        margin-top: 200px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item-produto {
+        max-width: 200px;
+        text-align: center;
+    }
+    
+    .item-produto img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .item-produto h3,
+    .item-produto p {
+        text-align: center;
+    }
+    
+    /* Contato */
+    .contato-container {
+        gap: 50px;
+        margin-left: 30px;
+        margin-top: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form {
+        max-width: 350px;
+        text-align: center;
+    }
+    
+    form input,
+    form textarea,
+    form select {
+        width: 300px;
+    }
+    
+    form button,
+    form input[type="submit"] {
+        width: 250px;
+        margin: 15px auto 0 auto;
+        display: block;
+    }
+    
+    .qr-article {
+        text-align: center;
+    }
+    
+    .qr-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* MOBILE - até 767px */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    /* Header mobile */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    #logoHeader {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 15px auto;
+    }
+    
+    .menu {
+        position: static;
+        left: auto;
+        top: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    ul.menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .menu a {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+    /* Produto principal mobile */
+    .produto-principal {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #Pp {
+        max-width: 90%;
+    }
+    
+    .descricao {
+        width: 90%;
+        max-width: 400px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .descricao h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .descricao p {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        line-height: 1.4;
+    }
+    
+    a#compre {
+        width: 180px;
+        margin: 30px auto 0 auto;
+        display: block;
+        text-align: center;
+    }
+    
+    /* Subprodutos mobile */
+    .subprodutos {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 80px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .item-produto {
+        max-width: 90%;
+        width: 280px;
+        text-align: center;
+    }
+    
+    .item-produto h3,
+    .item-produto p {
+        text-align: center;
+    }
+    
+    /* Contato mobile */
+    .contato-container {
+        flex-direction: column;
+        gap: 30px;
+        margin: 80px 20px 0 20px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    form {
+        max-width: 90%;
+        width: 350px;
+        padding: 25px;
+        text-align: center;
+    }
+    
+    form input,
+    form textarea,
+    form select {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    form button,
+    form input[type="submit"] {
+        width: 80%;
+        max-width: 250px;
+        margin: 15px auto 0 auto;
+        display: block;
+    }
+    
+    .qr-article {
+        max-width: 90%;
+        width: 350px;
+        padding: 25px;
+        text-align: center;
+    }
+    
+    .qr-img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Footer mobile */
+    footer {
+        text-align: center;
+    }
+    
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+/* MOBILE PEQUENO - até 480px */
+@media screen and (max-width: 480px) {
+    .descricao h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    .item-produto {
+        width: 95%;
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    .item-produto img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .item-produto h3,
+    .item-produto p {
+        text-align: center;
+    }
+    
+    form {
+        width: 95%;
+        max-width: 300px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .qr-article {
+        width: 95%;
+        max-width: 300px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .qr-img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* TELAS ULTRA-WIDE - acima de 1920px */
+@media screen and (min-width: 1921px) {
+    /* Header */
+    #logoHeader {
+        width: 180px;
+        height: 180px;
+        margin-left: 100px;
+    }
+    
+    .menu {
+        left: 400px;
+        gap: 20px;
+    }
+    
+    .menu a {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+    
+    /* Produto principal */
+    .produto-principal {
+        gap: 150px;
+        margin-top: 180px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #Pp {
+        max-width: 600px;
+    }
+    
+    .descricao {
+        width: 500px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .descricao h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .descricao p {
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.7;
+    }
+    
+    a#compre {
+        margin: 40px auto 0 auto;
+        display: block;
+        text-align: center;
+        width: 280px;
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+    
+    /* Subprodutos */
+    .subprodutos {
+        gap: 100px;
+        margin-top: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item-produto {
+        max-width: 320px;
+        text-align: center;
+    }
+    
+    .item-produto img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .item-produto h3 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .item-produto p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    /* Contato */
+    .contato-container {
+        gap: 120px;
+        margin-top: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form {
+        max-width: 500px;
+        text-align: center;
+        padding: 40px;
+    }
+    
+    form input,
+    form textarea,
+    form select {
+        width: 450px;
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+    
+    form button,
+    form input[type="submit"] {
+        width: 320px;
+        margin: 25px auto 0 auto;
+        display: block;
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+    
+    .qr-article {
+        text-align: center;
+        padding: 40px;
+    }
+    
+    .qr-img {
+        width: 350px;
+        height: 350px;
+    }
+}
+

@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    
+    
     <header class="topo-do-site">
         <nav>
             <img src="img/ReadEase.png" alt="logo" id="logoHeader">
             <ul class="menu">
-                <li><a class="sobre" href="#Pp">ReadEasy</a></li>
+                <li><a class="sobre" href="#Pp">ReadEase</a></li>
                 <li><a class="serviços" href="#subprodutos">Produtos</a></li>
                 <li><a class="agendamento" href="#nome">Contato</a></li>
                 <li><a class="contatomenu" href="#qr-img">Feedback</a></li>
@@ -24,16 +26,15 @@
         <div class="produto-principal">
             <img id="Pp" src="img/produto principal.png" alt="Produto">
             <div class="descricao">
-                <h1>ReadEasy o melhor<br>suporte para seus livros</h1>
+                <h1>ReadEase o melhor<br>suporte para seus livros</h1>
             <p>
                 <b>-Suporte para livros com Led Recarregável <br>
                 Acompanha cabo USB <br>
                
                 ⁠-Frete grátis para Salvador e região metropolitana 
                 <br>
-                ⁠-A partir de 10 unidades sai a X valor com retirada na empresa 
+                ⁠-A partir de 10 unidades sai a valor com retirada na empresa 
                 <br>⁠
-                
                 -Tamanho 32x21x28
                 <br>
                 -⁠Material: mdf </p></b>
@@ -50,7 +51,7 @@
         <img src="img/marca.png " alt="Produto 1">
         <h4>Marcador de Pagina</h4>
         <p>Marcadores de paginas sofisticados e dourados. <br>Na compra de dois leve um de graça!</p>
-        <a type="button" value="Compre Aqui" class="botaocompra1" href=><b>Compre Agora</b></a>
+        <a type="button" value="Compre Aqui" class="botaocompra1"  href=><b>Compre Agora</b></a>
       </div>
       <div class="item-produto">
             <img src="img/Portalibro.png" alt=""><br>
@@ -63,11 +64,11 @@
                 Fecho magnético integrado para fixação.
                 Exterior: Acrilico transparente texturizado antiderrapante.
                 Interior: Revestimento em microfibra não abrasiva.</p>
-            <a type="button" value="Compre Aqui" class="botaocompra2" href=><b>Compre Agora</b></a>
+            <a type="button" value="Compre Aqui" class="botaocompra2"  href=><b>Compre Agora</b></a>
       </div>
         <div class="item-produto">
              <img src="img/luminaria.png" alt=""><br>
-            <h4>Luminária Minimalista R$70</h4>
+            <h4>Luminária Minimalista</h4>
             <p>
                 Dimensões:
                 Altura: 70 cm
@@ -81,56 +82,50 @@
     </section>  
     </div>
     <div class="contato-container">
-        <form id="" action="">
-            <h2>Formulário de Contato</h2>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+<form action="https://formsubmit.co/lulubatislb@gmail.com" method="POST">
+    <h2>Formulário de Contato</h2>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
 
-            <button type="submit">Enviar</button>
-        </form>
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+    <!-- Proteção contra SPAM -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirecionamento após envio -->
+    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+    <button type="submit">Enviar</button>
+</form>
+
         <article class="qr-article">
             <h2>Sua opinião é muito importante para nós,
                 <br>deixe aqui a sua avaliação dos nossos produtos⬇️</h2>
             <img id="qr-img" src="img/qrcode.png" alt="QR Code para outra página" class="qr-img">
-            <a href="https://www.seusite.com/outra-pagina" target="_blank" class="qr-link">Clique aqui </a>
+            <h2>Não consegue ler o Qr Code?</h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqZeAw5LK2qVJwd28HN5rZAq2yM9Wdwlm0o8gOuDEcnGBl_w/viewform" target="_blank" class="qr-link">Clique aqui </a>
         </article>
     </div> <!-- Menu Mobile -->
-    <div class="abrir-menu" id="ReadEasy-social">
-        <i class="bi bi-list"></i>
-    </div> 
-    <div class="menu-mobile">
-        <div class="ReadEasy-fechar">
-            <i class="bi bi-x-lg"></i>
-        </div>
-
-        <nav>
-            <ul class="menu">
-                <li><a class="sobre" href="#Sobre">Sobre</a></li>
-                <li><a class="serviços" href="#Serviços">Serviços</a></li>
-                <li><a class="agendamento" href="#Agendamento">Agendamento</a></li>
-                <li><a class="contatomenu" href="#Contato">Contato</a></li>
-            </ul>   
-        </nav>
-    </div>
+    
     <!-- Menu Mobile -->
      <div class="overlay-menu" id="overlay-menu"></div>
         <footer>
         <div class="footer-content">
             <ul class="social-icons">
-                <li><a href="#"><i class="bi bi-facebook"   ></i></a></li>
-                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=%2B5571999816613&text&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"   ></i></a></li>
+                <li><a href="https://www.instagram.com/readease.oficial?igsh=MXAxMmtzd3NiamEyNw%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-"></i></a></li>
             </ul>
-            <p>&copy; 2025 C.A. Uneb Todos os direitos reservados.</p>
+            <p>&copy; 2025 André Luiz Todos os direitos reservados.</p>
         </div>
+<script src="script.js"></script>        
 </body>
 </html>
